@@ -1,4 +1,4 @@
 const OrganizationIdPage = () => {
-  return <div>OrganizationIdPage</div>;
+  return <div>Organization Page</div>;
 };
 export default OrganizationIdPage;

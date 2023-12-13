@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { Navbar } from "./_components/navbar";
 import { Footer } from "./_components/footer";
 
-function MarketingLayout({ children }: { children: ReactNode }) {
+const MarketingLayout = ({ children }: { children: ReactNode }) => {
   return (
     <div className="h-full bg-slate-100">
       <Navbar />
@@ -10,5 +10,5 @@ function MarketingLayout({ children }: { children: ReactNode }) {
       <Footer />
     </div>
   );
-}
+};
 export default MarketingLayout;
