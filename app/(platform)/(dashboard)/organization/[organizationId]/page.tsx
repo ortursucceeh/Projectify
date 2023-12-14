@@ -1,21 +1,11 @@
-import { create } from "@/actions/create-board";
-import { Button } from "@/components/ui/button";
 import { db } from "@/lib/db";
+import Form from "./form";
 
 const OrganizationIdPage = async () => {
   const boards = await db.board.findMany();
   return (
     <div>
-      <form action={create}>
-        <input
-          id="title"
-          name="title"
-          required
-          placeholder="Enter a board title"
-          className="border-black border p-2"
-        />
-        <Button type="submit">Sumbit</Button>
-      </form>
+      <Form />
       <div>
         {boards.map((board) => (
           <div key={board.id}>{board.title}</div>
