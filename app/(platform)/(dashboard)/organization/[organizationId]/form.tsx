@@ -2,6 +2,7 @@
 
 import { createBoard } from "@/actions/create-board";
 import { FormInput } from "@/components/form/form-input";
+import FormSubmit from "@/components/form/form-submit";
 import { useAction } from "@/hooks/use-action";
 
 const Form = () => {
@@ -24,6 +25,7 @@ const Form = () => {
       <div className="flex flex-col space-y-2">
         <FormInput id="title" errors={fieldsErrors} label="Board title" />
       </div>
+      <FormSubmit>Save</FormSubmit>
     </form>
   );
 };
