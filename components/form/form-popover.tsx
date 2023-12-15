@@ -28,7 +28,7 @@ const FormPopover = ({
   align,
   sideOffset = 0,
 }: FormPopoverProps) => {
-  const { execute, fieldsErrors } = useAction(createBoard, {
+  const { execute, fieldErrors } = useAction(createBoard, {
     onSuccess: (data) => {
       console.log(data);
       toast.success("Board created");
@@ -70,7 +70,7 @@ const FormPopover = ({
               id="title"
               label="Board title"
               type="text"
-              errors={fieldsErrors}
+              errors={fieldErrors}
             />
           </div>
           <FormSubmit className="w-full">Create</FormSubmit>
