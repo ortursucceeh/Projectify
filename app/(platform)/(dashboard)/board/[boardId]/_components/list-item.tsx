@@ -11,7 +11,7 @@ interface ListItemProps {
   index: number;
 }
 
-export const ListItem = ({ data, index }: ListItemProps) => {
+const ListItem = ({ data, index }: ListItemProps) => {
   const textareaRef = useRef<ElementRef<"textarea">>(null);
 
   const [isEditing, setIsEditing] = useState(false);
@@ -35,3 +35,5 @@ export const ListItem = ({ data, index }: ListItemProps) => {
     </li>
   );
 };
+
+export default ListItem;
