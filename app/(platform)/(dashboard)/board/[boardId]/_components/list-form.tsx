@@ -1,7 +1,7 @@
 "use client";
 
 import { FormInput } from "@/components/form/form-input";
-import { ListWrapper } from "./list-wrapper";
+import ListWrapper from "./list-wrapper";
 import FormSubmit from "@/components/form/form-submit";
 import { Button } from "@/components/ui/button";
 import { Plus, X } from "lucide-react";
