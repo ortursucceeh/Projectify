@@ -23,7 +23,7 @@ interface FormTextareaProps {
   defaultValue?: string;
 }
 
-export const FormTextarea = forwardRef<HTMLTextAreaElement, FormTextareaProps>(
+const FormTextarea = forwardRef<HTMLTextAreaElement, FormTextareaProps>(
   (
     {
       id,
@@ -77,4 +77,5 @@ export const FormTextarea = forwardRef<HTMLTextAreaElement, FormTextareaProps>(
   }
 );
 
+export default FormTextarea;
 FormTextarea.displayName = "FormTextarea";
