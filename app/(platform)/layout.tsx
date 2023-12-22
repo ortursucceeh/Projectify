@@ -7,11 +7,12 @@ const PlatformLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <ClerkProvider>
       <QueryProvider>
-        <Toaster />
+        <Toaster position="bottom-center" />
         <ModalProvider />
         {children}
       </QueryProvider>
     </ClerkProvider>
   );
 };
+
 export default PlatformLayout;
