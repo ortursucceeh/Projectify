@@ -17,12 +17,7 @@ const textFont = Poppins({
 const MarketingPage = () => {
   return (
     <div className="flex items-center justify-center flex-col">
-      <div
-        className={cn(
-          "flex items-center justify-center flex-col",
-          headingFont.className
-        )}
-      >
+      <div className={cn("flex items-center justify-center flex-col", headingFont.className)}>
         <div className="mb-4 flex items-center border shadow-sm p-4 bg-amber-100 text-amber-800 rounded-full uppercase">
           <Medal className="h-6 w-6 mr-2" />
           No 1 task managment
@@ -30,7 +25,7 @@ const MarketingPage = () => {
         <h1 className="text-3xl md:text-6xl text-center text-neutral-800 mb-6">
           Projectify helps team move
         </h1>
-        <div className="text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-600 to-purple-600 text-white px-4 pt-2   rounded-md uppercase">
+        <div className="text-3xl md:text-6xl bg-gradient-to-r from-sky-600 to-indigo-800 text-white px-4 pt-2   rounded-md uppercase">
           work forward.
         </div>
       </div>
@@ -41,13 +36,12 @@ const MarketingPage = () => {
           textFont.className
         )}
       >
-        Collaborate, manage projects, and reach new productivity peaks. From
-        high rises to the home office, the way your team works is unique -
-        accomplish it all with Projectify!
+        Collaborate, manage projects, and reach new productivity peaks. From high rises to the home
+        office, the way your team works is unique - accomplish it all with Projectify!
       </div>
 
       <Button className="mt-6" size="lg" asChild>
-        <Link href="/sign-up">Get Projectify for free</Link>
+        <Link href="/sign-up">Create an account</Link>
       </Button>
     </div>
   );

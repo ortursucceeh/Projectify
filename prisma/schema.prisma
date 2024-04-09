@@ -40,6 +40,18 @@ model List {
   @@index([boardId])
 }
 
+enum MARKS {
+  RED
+  GREEN
+  BLUE
+  PINK
+  YELLOW
+  ORANGE
+  GROWN
+  GREY
+  BLACK
+}
+
 model Card {
   id          String  @id @default(uuid())
   title       String
